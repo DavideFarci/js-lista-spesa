@@ -34,3 +34,16 @@ while (i < arrList.length) {
 	eleList.innerHTML += `<li>${arrList[i]}</li>`;
     i++
 }
+
+const btnAdd = document.querySelector("#btn-add");
+const inputAdd = document.querySelector("#input-add");
+
+btnAdd.addEventListener("click",
+function() {
+	const addText = inputAdd.value.trim();
+	console.log(addText);
+	arrList.push(addText);
+	console.log(arrList);
+	eleList.innerHTML += `<li>${addText}</li>`;
+}
+)
